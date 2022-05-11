@@ -1,7 +1,7 @@
 ---
 # defaults variables for ddns_update role
 auth_email: user@example.com
-auth_token: <auth_token>
+auth_key: <auth_key>
 zone_id: <zone_id>
 script_path: ~/cloudflare-ddns-updater/
 sub_domain: <sub_domain>
