@@ -1,12 +1,12 @@
 #!/bin/bash
 ## change to "bin/sh" when necessary
 
-auth_email="{{ auth_email }}"                                      # The email used to login 'https://dash.cloudflare.com
-auth_method="token"                                                # Set to "global" for Global API Key or "token" for Scoped API Token 
-auth_key="{{ auth_token }}"                                        # Your API Token or Global API Key
-zone_identifier="{{ zone_id }}"                                    # Can be found in the "Overview" tab of your domain
-record_name="{{ sub_domain }}.{{ root_domain }}"                   # Which record you want to be synced
-proxy=false                                                        # Set the proxy to true or false
+auth_email="{{ auth_email }}"
+auth_method="global"
+auth_key="{{ auth_key }}"
+zone_identifier="{{ zone_id }}"
+record_name="{{ sub_domain }}.{{ root_domain }}"
+proxy=false
 
 
 
