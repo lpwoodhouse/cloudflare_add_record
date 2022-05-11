@@ -3,13 +3,13 @@
 
 - name: create a A record pointing to 127.0.0.1
   cloudflare_dns:
-    zone: {{ root_domain }}
-    record: {{ sub_domain }}
+    zone: "{{ root_domain }}"
+    record: "{{ sub_domain }}"
     type: A
     value: 127.0.0.1
     proxied: no
-    account_email: {{ auth_email }}
-    account_api_key: {{ auth_key }}
+    account_email: "{{ auth_email }}"
+    account_api_key: "{{ auth_key }}"
     state: present
   register: record
 
