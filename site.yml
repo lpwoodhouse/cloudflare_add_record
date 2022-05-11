@@ -1,0 +1,8 @@
+---
+- name: config new subdomain script for ddns update task scheduler
+  hosts: all
+  become: true
+  gather_facts: true
+   
+  roles:
+    - ddns_update
