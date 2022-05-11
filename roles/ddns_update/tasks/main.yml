@@ -1,1 +1,9 @@
+---
+# main task for ddns_update role
 
+- name: copy template to script directory
+  template:
+    src: template.sh.j2
+    dest: "{{ sub_domain }}.{{ root_domain }}.sh"
+  args:
+    chdir: "{{ script_path }}"
