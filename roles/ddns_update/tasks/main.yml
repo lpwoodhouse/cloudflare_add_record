@@ -8,5 +8,3 @@
     owner: "{{ ansible_user }}"
     group: users
     mode: 0700
-  args:
-    chdir: "{{ script_path }}"
