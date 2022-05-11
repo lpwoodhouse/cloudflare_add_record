@@ -1,2 +1,15 @@
 ---
 # main task for add_record role
+
+- name: create a A record pointing to 127.0.0.1
+  cloudflare_dns:
+    zone: {{ root_domain }}
+    record: {{ sub_domain }}
+    type: A
+    value: 127.0.0.1
+    account_email: {{ auth_email }}
+    account_api_key: {{ auth_key }}
+  register: record
+
+- debug:
+    msg: "{{ record }}"
