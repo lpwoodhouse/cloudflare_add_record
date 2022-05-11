@@ -5,7 +5,7 @@ auth_email="{{ auth_email }}"                                      # The email u
 auth_method="token"                                                # Set to "global" for Global API Key or "token" for Scoped API Token 
 auth_key="{{ auth_token }}"                                        # Your API Token or Global API Key
 zone_identifier="{{ zone_id }}"                                    # Can be found in the "Overview" tab of your domain
-record_name="{{ record_name }}"                                    # Which record you want to be synced
+record_name="{{ sub_domain }}.{{ root_domain }}"                   # Which record you want to be synced
 proxy=false                                                        # Set the proxy to true or false
 
 
