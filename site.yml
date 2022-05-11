@@ -4,5 +4,13 @@
   become: true
   gather_facts: true
    
-  roles:
-    - ddns_update
+  tasks:
+  
+  - name: add new A record
+    include_role:
+      - roles/add_record
+    when: add_record|bool
+  
+  - name: add new ddns update script
+    include_role:
+      - ddns_update
