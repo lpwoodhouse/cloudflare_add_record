@@ -8,9 +8,9 @@
   
   - name: add new A record
     include_role:
-      - roles/add_record
+      name: add_record
     when: add_record|bool
   
   - name: add new ddns update script
     include_role:
-      - ddns_update
+      name: ddns_update
