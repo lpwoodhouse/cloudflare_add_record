@@ -33,6 +33,8 @@ None
 ## Example Playbook
 ```yaml
     - hosts: all
+      vars:
+        add_record: true
       roles:
         - add_record
         - ddns_update
