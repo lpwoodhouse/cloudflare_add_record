@@ -13,3 +13,5 @@
   shell: "./{{ sub_domain }}.{{root_domain }}.sh"
   args:
     chdir: "{{ script_path }}"
+
+# following the execution of the update script, subsequent updates can be performed by creating a scheduled task or cron job

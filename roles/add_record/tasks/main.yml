@@ -13,5 +13,8 @@
     state: present
   register: record
 
+# following the creation of the new A record a subsequent task/role is required to update the address value
+# the ddns_update role is utilized to achieve this
+
 - debug:
     msg: "{{ record }}"

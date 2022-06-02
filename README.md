@@ -1,8 +1,8 @@
-# Ansible Role: <role name>
+# Ansible Role: add_record, ddns_update
 
 ### <sub-heading>
 
-Description here
+A role tailored to my homelab for adding a DNS A record (subdomain.leewoodhouse.com) using the cloudflare api and then updating it with a cloudflare dynamic DNS update script
 
 ## Requirements
 
@@ -12,9 +12,19 @@ community.general
 
 Available variables are listed below, along with default values (see ```defaults/main.yml```)
 ```shell
-variable1:
-variable2:
-...etc
+# add_record role
+auth_email: user@example.com
+auth_key: <auth_key>
+sub_domain: <sub_domain>
+root_domain: example.com
+# ddns_update role
+auth_email: user@example.com
+auth_key: <auth_key>
+zone_id: <zone_id>
+script_path: ~/cloudflare-ddns-updater/
+sub_domain: <sub_domain>
+root_domain: example.com
+
 ```
 ## Dependencies
 
@@ -24,7 +34,8 @@ None
 ```yaml
     - hosts: all
       roles:
-        - <role name>
+        - add_record
+        - ddns_update
 ```
 
 ## License
