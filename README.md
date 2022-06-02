@@ -6,7 +6,7 @@ Description here
 
 ## Requirements
 
-None
+community.general
 
 ## Role Variables
 
