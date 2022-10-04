@@ -1,8 +1,6 @@
-# Ansible Role: add_record, ddns_update
+# Ansible Play: cloudflare_add_record
 
-### <sub-heading>
-
-A role tailored to my homelab for adding a DNS A record (subdomain.leewoodhouse.com) using the cloudflare api and then updating it with a cloudflare dynamic DNS update script
+This play is for adding a DNS A record using the cloudflare api and then updating it with a cloudflare dynamic DNS update script.
 
 ## Requirements
 
