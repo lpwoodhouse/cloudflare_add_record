@@ -1,4 +1,9 @@
-# Ansible Play: cloudflare_add_record
+# Ansible Playbook: cloudflare_add_record
+![GitHub last commit](https://img.shields.io/github/last-commit/lpwoodhouse/playbook_cloudflare_add_record)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/lpwoodhouse/playbook_cloudflare_add_record)
+![GitHub top language](https://img.shields.io/github/languages/top/lpwoodhouse/playbook_cloudflare_add_record)
+
+## Purpose
 
 This play is for adding a DNS A record using the cloudflare api and then updating it with a cloudflare dynamic DNS update script.
 
@@ -40,7 +45,7 @@ None
 
 ## License
 
-MIT
+[![GitHub](https://img.shields.io/github/license/lpwoodhouse/playbook_cloudflare_add_record)](LICENSE)
 
 ## Author Information
 
